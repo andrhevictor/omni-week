@@ -5,3 +5,5 @@ services:
     volumes:
       - ./backend:/code
     working_dir: /code
+    ports: 
+      - 3333:3333
