@@ -86,3 +86,11 @@ typings/
 
 # DynamoDB Local files
 .dynamodb/
+
+\.vs/omni-week/v15/\.suo
+
+\.vs/ProjectSettings\.json
+
+\.vs/slnx\.sqlite
+
+\.vs/VSWorkspaceState\.json
