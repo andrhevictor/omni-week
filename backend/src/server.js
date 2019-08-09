@@ -1,9 +1,14 @@
 const express = require('express');
+const mongoose = require('mongoose');
+const routes = require('./routes');
 
 const server = express();
 
-server.get('/', (req, res) => {
-  return res.send('Hello world');
+mongoose.connect('mongodb://root:root@mongo:27017/omnistack?authSource=admin', {
+  useNewUrlParser: true
 });
+
+server.use(express.json())
+server.use(routes);
 
 server.listen(3333);
